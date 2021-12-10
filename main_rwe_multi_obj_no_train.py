@@ -8,6 +8,8 @@ import logging
 
 logging.disable(logging.CRITICAL)
 
+import os
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 
 def parse_args():
     parser = argparse.ArgumentParser()
